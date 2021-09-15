@@ -1,0 +1,13 @@
+@mixin btn {
+  text-align: center;
+  width: 100px;
+  border-radius: 90px;
+}
+.buttons {
+  .btn-1 {
+    @include btn;
+  }
+  .btn-2 {
+    @include btn;
+  }
+}

@@ -1,0 +1,36 @@
+$header_background: ;
+$hover: white;
+$color_hover: red;
+@mixin clear {
+    content: "";
+    clear: both;  
+}
+nav{
+    @include clear;
+    background-color: $header_background;
+    width: 100%;
+    height: 30px;
+    margin: 5px auto;
+    ul {
+        padding: 5px;
+        list-style: none;
+        
+      li {
+        a:link{
+            text-decoration: none;
+
+        }
+       display: inline;
+       &:hover{
+        background-color: $hover;
+           a:link{
+            color: $color_hover;
+
+        }
+         
+       }
+      
+      }
+    }
+   
+}
